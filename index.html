@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">      
+</head>
+<body class="bg-gray-100">b
+    <!-- Heading -->
+    <div class="flex justify-center my-8">
+        <h1 class="font-bold text-3xl">Gaming Website</h1>
+    </div>
+    
+    <!-- Choices -->
+   <div class="flex justify-around mb-8">
+    <div class="ml-72 choice bg-pink-300 p-4 rounded-lg flex items-center justify-center shadow-md transition duration-300 hover:bg-pink-600 rounded-full mx-2" id="rock">
+        <img src="rock.png" alt="Rock" class="w-24 h-24 rounded-full">
+    </div>
+    <div class=" choice bg-green-300 p-4 rounded-lg flex items-center justify-center shadow-md transition duration-300 hover:bg-green-600 rounded-full mx-2" id="paper">
+        <img src="paper.png" alt="Paper" class="w-24 h-24 rounded-full">
+    </div>
+    <div class=" mr-72 choice bg-yellow-300 p-4 rounded-lg flex items-center justify-center shadow-md transition duration-300 hover:bg-yellow-600 rounded-full mx-2" id="scissors">
+        <img src="scissors.png" alt="Scissors" class="w-24 h-24 rounded-full">
+    </div>
+</div>
+
+    <!-- Scoreboard -->
+    <div class="flex justify-center mb-8 mt-8">
+        <div class="score text-center mx-4">
+            <p class="text-2xl font-bold user-score" id="uscore">0</p>
+            <p class="text-lg">You</p>
+        </div>
+
+        <div class="score text-center mx-4">
+            <p class="text-2xl font-bold comp-score" id="cscore">0</p>
+            <p class="text-lg">Computer</p>
+        </div>
+    </div>
+
+    <!-- Play Your Move -->
+    <div class="flex justify-center"> 
+        
+        <div class="text-center mr-16">
+        <div class="h-28 w-28  flex justify-center  rounded-full" id="user1"></div>
+         <label for="">User Choice</label>
+        </div>
+        <div class="score text-center flex justify-center mb-8 mt-8">
+            <p class="text-lg bg-gray-700 flex items-center justify-center text-white border-solid rounded-lg p-6" id="msg">Play Your Move</p>
+        </div>
+        <div class="text-center  ml-16">
+        <div class="h-28 w-28  flex justify-center  rounded-full" id="comp1"></div>
+        <label for="">Comp Choice</label>
+        </div>
+    </div>
+    
+
+
+         </div>
+
+
+    </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
